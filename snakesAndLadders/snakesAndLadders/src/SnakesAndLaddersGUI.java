@@ -83,14 +83,6 @@ public class SnakesAndLaddersGUI extends javax.swing.JFrame implements ActionLis
 
         jLayeredPane1.setPreferredSize(new java.awt.Dimension(816, 836));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("H:\\ICS4U\\snakesAndLadders\\snakesAndLadders\\resources\\red.png")); // NOI18N
-
-        jLabel2.setIcon(new javax.swing.ImageIcon("H:\\ICS4U\\snakesAndLadders\\snakesAndLadders\\resources\\blue.png")); // NOI18N
-
-        jLabel3.setIcon(new javax.swing.ImageIcon("H:\\ICS4U\\snakesAndLadders\\snakesAndLadders\\resources\\green.png")); // NOI18N
-
-        jLabel4.setIcon(new javax.swing.ImageIcon("H:\\ICS4U\\snakesAndLadders\\snakesAndLadders\\resources\\purple.png")); // NOI18N
-
         jLayeredPane1.setLayer(jLabel1, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jLayeredPane1.setLayer(jLabel2, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jLayeredPane1.setLayer(jLabel3, javax.swing.JLayeredPane.DEFAULT_LAYER);
@@ -112,12 +104,12 @@ public class SnakesAndLaddersGUI extends javax.swing.JFrame implements ActionLis
                         .addComponent(jLabel3)
                         .addGap(18, 18, 18)
                         .addComponent(jLabel4)))
-                .addContainerGap(724, Short.MAX_VALUE))
+                .addContainerGap(764, Short.MAX_VALUE))
         );
         jLayeredPane1Layout.setVerticalGroup(
             jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jLayeredPane1Layout.createSequentialGroup()
-                .addContainerGap(734, Short.MAX_VALUE)
+                .addContainerGap(774, Short.MAX_VALUE)
                 .addGroup(jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jLabel2, javax.swing.GroupLayout.Alignment.TRAILING))
@@ -127,18 +119,6 @@ public class SnakesAndLaddersGUI extends javax.swing.JFrame implements ActionLis
                     .addComponent(jLabel4))
                 .addGap(44, 44, 44))
         );
-
-        jLabel6.setIcon(new javax.swing.ImageIcon("H:\\ICS4U\\snakesAndLadders\\snakesAndLadders\\resources\\two.png")); // NOI18N
-
-        jLabel8.setIcon(new javax.swing.ImageIcon("H:\\ICS4U\\snakesAndLadders\\snakesAndLadders\\resources\\four.png")); // NOI18N
-
-        jLabel9.setIcon(new javax.swing.ImageIcon("H:\\ICS4U\\snakesAndLadders\\snakesAndLadders\\resources\\five.png")); // NOI18N
-
-        jLabel10.setIcon(new javax.swing.ImageIcon("H:\\ICS4U\\snakesAndLadders\\snakesAndLadders\\resources\\six.png")); // NOI18N
-
-        jLabel7.setIcon(new javax.swing.ImageIcon("H:\\ICS4U\\snakesAndLadders\\snakesAndLadders\\resources\\three.png")); // NOI18N
-
-        jLabel5.setIcon(new javax.swing.ImageIcon("H:\\ICS4U\\snakesAndLadders\\snakesAndLadders\\resources\\one.png")); // NOI18N
 
         jTextField3.setText("Hello!");
 

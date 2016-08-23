@@ -113,7 +113,7 @@ public class Battleship extends JPanel {
                 }
             }
             //Once the ships are done being placed for either player, I disable their buttons
-            //One, to not glitch the game, and two, to make screen peaking hard
+            //One, to not glitch the game, and two, to make screen peeking hard
             if (p1count==0){for (int i=0;i<100;i++){b[i].setEnabled(false);}}
             if (p2count==0){for (int i=0;i<100;i++){c[i].setEnabled(false);}}
             //If both players are ready, I enable the start button
