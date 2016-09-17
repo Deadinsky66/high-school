@@ -585,7 +585,7 @@ public class QuizPMDGUI extends javax.swing.JFrame {
             case 1:
                 disable(3);
                 jTextArea1.setText("Your country's leader is in front of you.\nHow do you speak to him or her?"
-                        + "\n1. Speak nature[9]ly\n2. Speak nervously\n3. WHATEVER!!");
+                        + "\n1. Speak naturely\n2. Speak nervously\n3. WHATEVER!!");
                 if (second==1){
                     if (userChoice==1){nature[0]+=2;}
                     else if (userChoice==2){nature[1]+=2;}

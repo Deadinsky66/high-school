@@ -27,9 +27,21 @@ public class SnakesAndLaddersGUI extends javax.swing.JFrame implements ActionLis
     int redx[] = {14,96,177,258,337,418,499,577,652,730};
     int redy[] = {734,655,575,494,416,337,259,177,96,11};
     String name[] = {"Adam","Justin","Thomas","Stefanie"};
+    //Set all of my images
+    Image one = Toolkit.getDefaultToolkit().getImage(getClass().getResource("resources/one.png"));
+    Image two = Toolkit.getDefaultToolkit().getImage(getClass().getResource("resources/two.png"));
+    Image three = Toolkit.getDefaultToolkit().getImage(getClass().getResource("resources/three.png"));
+    Image four = Toolkit.getDefaultToolkit().getImage(getClass().getResource("resources/four.png"));
+    Image five = Toolkit.getDefaultToolkit().getImage(getClass().getResource("resources/five.png"));
+    Image six = Toolkit.getDefaultToolkit().getImage(getClass().getResource("resources/six.png"));
+    Image red = Toolkit.getDefaultToolkit().getImage(getClass().getResource("resources/red.png"));
+    Image blue = Toolkit.getDefaultToolkit().getImage(getClass().getResource("resources/blue.png"));
+    Image green = Toolkit.getDefaultToolkit().getImage(getClass().getResource("resources/green.png"));
+    Image purple = Toolkit.getDefaultToolkit().getImage(getClass().getResource("resources/purple.png"));
     public SnakesAndLaddersGUI() {
         //I make the background a chutes and ladders board
-        setContentPane(new JLabel(new ImageIcon("resources/snakes.png")));
+        Image snakes = Toolkit.getDefaultToolkit().getImage(getClass().getResource("resources/snakes.png"));
+        setContentPane(new JLabel(new ImageIcon(snakes)));
         //All of the gui shit from the design slate
         initComponents();
         //I start a timer that calls upon action listener every 50 milliseconds
@@ -37,8 +49,6 @@ public class SnakesAndLaddersGUI extends javax.swing.JFrame implements ActionLis
         timer.start();
         jTextArea1.setLineWrap(true);
     }
-    @SuppressWarnings("unchecked")
-    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
         jLayeredPane1 = new javax.swing.JLayeredPane();
@@ -82,6 +92,11 @@ public class SnakesAndLaddersGUI extends javax.swing.JFrame implements ActionLis
         setResizable(false);
 
         jLayeredPane1.setPreferredSize(new java.awt.Dimension(816, 836));
+        
+        jLabel1.setIcon(new javax.swing.ImageIcon(red));
+        jLabel2.setIcon(new javax.swing.ImageIcon(blue));
+        jLabel3.setIcon(new javax.swing.ImageIcon(green));
+        jLabel4.setIcon(new javax.swing.ImageIcon(purple));
 
         jLayeredPane1.setLayer(jLabel1, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jLayeredPane1.setLayer(jLabel2, javax.swing.JLayeredPane.DEFAULT_LAYER);
@@ -104,12 +119,12 @@ public class SnakesAndLaddersGUI extends javax.swing.JFrame implements ActionLis
                         .addComponent(jLabel3)
                         .addGap(18, 18, 18)
                         .addComponent(jLabel4)))
-                .addContainerGap(764, Short.MAX_VALUE))
+                .addContainerGap(724, Short.MAX_VALUE))
         );
         jLayeredPane1Layout.setVerticalGroup(
             jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jLayeredPane1Layout.createSequentialGroup()
-                .addContainerGap(774, Short.MAX_VALUE)
+                .addContainerGap(734, Short.MAX_VALUE)
                 .addGroup(jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jLabel2, javax.swing.GroupLayout.Alignment.TRAILING))
@@ -119,6 +134,13 @@ public class SnakesAndLaddersGUI extends javax.swing.JFrame implements ActionLis
                     .addComponent(jLabel4))
                 .addGap(44, 44, 44))
         );
+        
+	jLabel5.setIcon(new javax.swing.ImageIcon(one));
+        jLabel6.setIcon(new javax.swing.ImageIcon(two));
+	jLabel7.setIcon(new javax.swing.ImageIcon(three));
+        jLabel8.setIcon(new javax.swing.ImageIcon(four));
+        jLabel9.setIcon(new javax.swing.ImageIcon(five));
+        jLabel10.setIcon(new javax.swing.ImageIcon(six));
 
         jTextField3.setText("Hello!");
 
@@ -362,7 +384,7 @@ public class SnakesAndLaddersGUI extends javax.swing.JFrame implements ActionLis
         );
 
         pack();
-    }// </editor-fold>//GEN-END:initComponents
+    }
     //This button runs the game
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         //I set the count variable 15 cycles below the main game, so the round screen can show
